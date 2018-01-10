@@ -9,7 +9,7 @@ module.exports = {
     new HtmlPlugin({ template: `./src/third-file.html`, filename: `third-file.html` }),
     new CopyWebpackPlugin([
       {from: 'src/images', to: 'images'}
-    ])
+     ])
   ],
   module: {
     rules: [
@@ -31,7 +31,7 @@ module.exports = {
             loader: 'css-loader',
             options: { importLoaders: 1, }
           },
-          'postcss-loader'
+          { loader: 'postcss-loader' }
         ]
       }     
     ]
