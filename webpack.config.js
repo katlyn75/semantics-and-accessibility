@@ -5,8 +5,8 @@ module.exports = {
   entry: `./src/main.js`,
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
-    new HtmlPlugin({ template: `./src/tyler.html`, filename: `second-file.html` }),
-    new HtmlPlugin({ template: `./src/gymnast.html`, filename: `third-file.html` }),
+    new HtmlPlugin({ template: `./src/tyler.html`, filename: `tyler.html` }),
+    new HtmlPlugin({ template: `./src/gymnast.html`, filename: `gymnast.html` }),
     new CopyWebpackPlugin([
       {from: 'src/images', to: 'images'}
      ])
