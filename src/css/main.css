@@ -1,31 +1,50 @@
 body {
-    color:black;
-    background-color: teal;
+    color:#212121;
+    background-color: #57B6FF;
 }
-
-main {
-    font-size: 1.25rem;
+banner {
+    width:100%;
+    height: 3rem;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    justify-content: space-around;
+    justify-content: space-between;
 }
-
+.p-section {
+    display:block;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
 h1 {
-    font-weight:normal;
+    font-weight:bold;
     font-size: 2rem;
     padding: 10px 10px 10px 10px;
+    justify-content: center;
+    color:#320061;
 }
-
-.author-info {
+.video-responsive {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+}
+.video-responsive iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        box-sizing:border-box;
+        padding: 1rem, 1rem, 1rem, 1rem;
+}
+#author-info {
     font-size: 1.25rem;
     box-sizing:border-box;
     padding-top: 5px;
-}
-
-#date {
-    font-size: 1.25rem;    
+    width: calc(100% - 10rem);
 }
 
 img {
@@ -33,17 +52,19 @@ img {
     height: auto;
     display: block;
     box-sizing:border-box;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .article-one .article-two {
     font-size: 2rem;
     width: calc(100% - 6rem);
+    display:block;
 }
 
 #footer-info {
-    font-size: 1.25rem;
-    padding: 5px 5px 5px 5px;
-    
+    font-size: 1rem;
+    text-align:center;
+    justify-content: space-around;   
 }
 
