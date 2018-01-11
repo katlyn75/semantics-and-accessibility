@@ -1,0 +1,49 @@
+body {
+    color:black;
+    background-color: teal;
+}
+
+main {
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-weight:normal;
+    font-size: 2rem;
+    padding: 10px 10px 10px 10px;
+}
+
+.author-info {
+    font-size: 1.25rem;
+    box-sizing:border-box;
+    padding-top: 5px;
+}
+
+#date {
+    font-size: 1.25rem;    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing:border-box;
+    padding-bottom: 10px;
+}
+
+.article-one .article-two {
+    font-size: 2rem;
+    width: calc(100% - 6rem);
+}
+
+#footer-info {
+    font-size: 1.25rem;
+    padding: 5px 5px 5px 5px;
+    
+}
+
