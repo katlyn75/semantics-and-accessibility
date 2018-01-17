@@ -1,49 +1,122 @@
+
 body {
     color:#212121;
     background-color: #57B6FF;
+    width: 100%;
 }
-banner {
+
+#banner {
     width:100%;
-    height: 3rem;
+    height: 5rem;
+    box-sizing:border-box;
+    justify-content:space-around; 
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+}
+
+/* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    justify-content: space-around;
+}
+
+.read-more {
+    background: #320061;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;    
+}
+
+/* https://css-tricks.com/css-content/ */
+.read-more:after {
+    content:  " \00bb";
+}
+
+.teaser{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
+    display: block; 
     justify-content: space-around;
     justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+    padding-block-end: .5rem;
+    padding-block-start: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-.p-section {
+
+.sections {
     display:block;
-    justify-content:space-around;
-    flex-wrap:wrap;
+    text-justify: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-bottom-style: solid;
+    border-bottom-color: #212121;
+    border-bottom-width: .5rem;
 }
+
+.title-link {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: space-around;
+    color: #212121;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
 h1 {
-    font-weight:bold;
+    font-weight: bold;
     font-size: 2rem;
-    padding: 10px 10px 10px 10px;
-    justify-content: center;
-    color:#320061;
+    margin: 2rem 1rem 2rem 1rem;
+    
 }
-.video-responsive {
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+
+.video-responsive { 
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 1rem 0;
+}  
+
 .video-responsive iframe {
-        left:0;
-        top:0;
         height:100%;
         width:100%;
-        position:absolute;
-        box-sizing:border-box;
-        padding: 1rem, 1rem, 1rem, 1rem;
+        position: absolute;
+        left:0;
+        top:0;
 }
-#author-info {
+
+.author-info {
     font-size: 1.25rem;
-    box-sizing:border-box;
-    padding-top: 5px;
+    display: block;
+    text-align: left;
+    padding: 1rem 1rem 1rem 2rem;
     width: calc(100% - 10rem);
 }
 
@@ -52,19 +125,76 @@ img {
     height: auto;
     display: block;
     box-sizing:border-box;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+}
+
+.figure {
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
+}
+
+.fig-caption {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    justify-content: space-around;
 }
 
 .article-one .article-two {
     font-size: 2rem;
-    width: calc(100% - 6rem);
-    display:block;
+    width: 100%;
+    display: block;
 }
 
+#more-info {
+    display: block;
+    text-align:left;
+    padding: 2rem;
+    border-style: solid;
+    border-color: black;
+} 
+
+h3 {
+    font-weight: bold;
+    font-size: 1.25rem; 
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+h5 {
+    text-align: center;
+}
+
+/* .icons {
+    justify-content: space-around;
+    justify-content: space-between;
+} */
+
+#pod-info {
+    justify-content: space-around;
+    text-justify: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem;
+    padding-top: .5rem;
+}
 #footer-info {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align:center;
-    justify-content: space-around;   
+    justify-content: space-around;  
 }
 
+@media screen and (min-width:480px) {
+    img {
+        display:flex;
+        width:100%;
+    } 
+}
