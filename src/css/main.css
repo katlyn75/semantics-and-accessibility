@@ -1,46 +1,93 @@
 body {
     color:#212121;
     background-color: #57B6FF;
+    width: 100%;
+}
 
-}
-banner {
+#banner {
     width:100%;
-    height: 3rem; 
+    height: 5rem;
+    box-sizing:border-box;
+    justify-content:space-around; 
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.25rem;
 }
-/* #main {
-    display:block;
-    width: 95%;
-} */
+
+/* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.read-more {
+    background: #320061;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* https://css-tricks.com/css-content/ */
+.read-more:after {
+    content:  " \00bb";
+}
+
+.teaser{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
 
 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
-    display: block;
+    display: block; 
     justify-content: space-around;
     justify-content: space-between;
-} 
+    padding: 1rem 1rem 1rem 1rem;
+    padding-block-end: .5rem;
+    padding-block-start: .5rem;
+}
+
 .sections {
     display:block;
     text-justify: auto;
-    width: auto;
     margin-left: 2rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-bottom-style: solid;
+    border-bottom-color: #212121;
+    border-bottom-width: .5rem;
 }
+
 h1 {
     font-weight:bold;
-    font-size: 2rem;
-    padding: 20px 10px 20px 10px;
+    font-size: 2.5rem;
+    padding: 3rem 1rem 2rem 1rem;
     text-align: center;
     justify-content: center;
     color: #320061;
 }
-.video-responsive {
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
+
+.video-responsive { 
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height:0;
+}  
+
 .video-responsive iframe {
         left:0;
         top:0;
@@ -48,19 +95,15 @@ h1 {
         width:100%;
         position: absolute;
         box-sizing:border-box;
-        padding: 1rem, 1rem, 1rem, 1rem;
+        padding: 1rem, 0rem, 3rem, 0rem;
 }
+
 .author-info {
     font-size: 1.25rem;
-    display: block center;
-    text-align: left;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: block;
+    text-align: center;
+    padding: 1rem 1rem 1rem 2rem;
     width: calc(100% - 10rem);
-}
-.date {
-    text-align-last: center;    
 }
 
 img {
@@ -69,34 +112,61 @@ img {
     display: block;
     display:center;
     box-sizing:border-box;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+}
+
+.fig-caption {
+    text-align: left;
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    justify-content: space-around;
 }
 
 .article-one .article-two {
     font-size: 2rem;
-    width: calc(100% - 6rem);
+    width: 100%;
     display: block;
 }
+
 #more-info {
     display: block;
-    text-align:center;
-    background-color: white;
+    text-align:left;
     padding: 2rem;
-
+    border-style: solid;
+    border-color: black;
 } 
+
 h3 {
     text-align:auto;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 1.25rem; 
+    padding-bottom: .5rem;
+    padding-top: 1rem;
 }
 
 h4 {
     text-align: center;
     font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
+/* .icons {
+    justify-content: space-around;
+    justify-content: space-between;
+} */
+
+#pod-info {
+    justify-content: space-around;
+    text-justify: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem;
+    padding-top: .5rem;
+}
 #footer-info {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align:center;
-    justify-content: space-around;   
+    justify-content: space-around;  
 }
