@@ -20,6 +20,7 @@ body {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
+    justify-content: space-around;
 }
 
 .read-more {
@@ -29,6 +30,7 @@ body {
     border-radius: .5rem;
     display: inline-block;
     margin-bottom: 1rem;
+    margin-top: 1rem;    
 }
 
 /* https://css-tricks.com/css-content/ */
@@ -53,51 +55,67 @@ p {
     padding: 1rem 1rem 1rem 1rem;
     padding-block-end: .5rem;
     padding-block-start: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .sections {
     display:block;
     text-justify: auto;
     margin-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     border-bottom-style: solid;
     border-bottom-color: #212121;
     border-bottom-width: .5rem;
 }
 
-h1 {
-    font-weight:bold;
+.title-link {
+    font-weight: bold;
     font-size: 2.5rem;
-    padding: 3rem 1rem 2rem 1rem;
     text-align: center;
-    justify-content: center;
-    color: #320061;
+    justify-content: space-around;
+    color: #212121;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2rem 1rem 2rem 1rem;
+    
 }
 
 h2 {
     font-weight: bold;
     font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .video-responsive { 
-        overflow: hidden;
-        padding-bottom: 57.25%; 
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 1rem 0;
 }  
 
 .video-responsive iframe {
         height:100%;
         width:100%;
         position: absolute;
-        padding: 1rem, 0rem, 3rem, 0rem;
+        left:0;
+        top:0;
 }
 
 .author-info {
     font-size: 1.25rem;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 1rem 1rem 1rem 2rem;
     width: calc(100% - 10rem);
 }
@@ -106,15 +124,18 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    display:center;
     box-sizing:border-box;
-    padding-top: 2.5rem;
+}
+
+.figure {
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
 }
 
 .fig-caption {
     text-align: left;
-    padding-bottom: 2.5rem;
-    padding-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
     justify-content: space-around;
 }
 
@@ -133,18 +154,22 @@ img {
 } 
 
 h3 {
-    text-align:auto;
     font-weight: bold;
     font-size: 1.25rem; 
-    padding-bottom: .5rem;
-    padding-top: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 h4 {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+h5 {
+    text-align: center;
 }
 
 /* .icons {
@@ -167,11 +192,9 @@ h4 {
     justify-content: space-around;  
 }
 
-/* @media screen and (min-width:480px) {
-    img{
+@media screen and (min-width:480px) {
+    img {
         display:flex;
         width:100%;
-    } */
-
-
+    } 
 }
