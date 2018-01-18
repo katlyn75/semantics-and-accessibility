@@ -10,7 +10,7 @@ body {
     height: 5rem;
     box-sizing:border-box;
     justify-content:space-around; 
-    text-align: left;
+    text-align: center;
     margin-left: 2rem;
     font-size: 1.25rem;
 }
@@ -65,10 +65,11 @@ p {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     border-bottom-style: solid;
     border-bottom-color: #212121;
     border-bottom-width: .5rem;
+    
 }
 
 .title-link {
@@ -92,8 +93,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .video-responsive { 
@@ -112,12 +112,23 @@ h2 {
         top:0;
 }
 
+.byline-info {
+    color: #320061;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
 .author-info {
+    color:#320061;
     font-size: 1.25rem;
     display: block;
-    text-align: left;
-    padding: 1rem 1rem 1rem 2rem;
-    width: calc(100% - 10rem);
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem; 
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 img {
@@ -168,33 +179,32 @@ h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 h5 {
     text-align: center;
+    font-size: 1.25rem;
+    justify-content: space-around;
 }
 
-/* .icons {
-    justify-content: space-around;
-    justify-content: space-between;
-} */
-
-#pod-info {
-    justify-content: space-around;
-    text-justify: auto;
-    border-style: solid;
-    border-color: black;
-    border-width: .25rem;
-    border-radius: 1rem;
-    padding-top: .5rem;
-}
 #footer-info {
     font-size: 1.25rem;
     text-align:center;
-    justify-content: space-around;  
+    justify-content: space-around;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem;  
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:400px) {
     img {
         display:flex;
         width:100%;
     } 
+}
+
+@media screen and (min-width:1000px) {
+    font-size: 3rem;
 }
