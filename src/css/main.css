@@ -1,20 +1,22 @@
 
 body {
     color:#212121;
-    background-color: #57B6FF;
+    background-color: rgb(135, 200, 250);
     width: 100%;
 }
 
 #banner {
     width:100%;
     height: 5rem;
-    box-sizing:border-box;
-    justify-content:space-around; 
-    text-align: left;
+    box-sizing:border-box; 
+    text-align: center;
     margin-left: 2rem;
     font-size: 1.25rem;
 }
-
+#main {
+    width:100%;
+    padding: 1rem;
+}
 /* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
 .clip {
     position: absolute !important;
@@ -43,18 +45,14 @@ body {
     font-size: 1.5rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     display: block; 
-    justify-content: space-around;
-    justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
-    padding-block-end: .5rem;
-    padding-block-start: .5rem;
+    padding: 1rem; 
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -62,13 +60,11 @@ p {
 .sections {
     display:block;
     text-justify: auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin: 2rem 2rem;
     border-bottom-style: solid;
     border-bottom-color: #212121;
     border-bottom-width: .5rem;
+    
 }
 
 .title-link {
@@ -92,8 +88,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .video-responsive { 
@@ -105,19 +100,30 @@ h2 {
 }  
 
 .video-responsive iframe {
-        height:100%;
-        width:100%;
-        position: absolute;
-        left:0;
-        top:0;
+    height:100%;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.byline-info {
+    color: #320061;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .author-info {
+    color:#320061;
     font-size: 1.25rem;
     display: block;
-    text-align: left;
-    padding: 1rem 1rem 1rem 2rem;
-    width: calc(100% - 10rem);
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem; 
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 img {
@@ -128,8 +134,7 @@ img {
 }
 
 .figure {
-    margin-top: 3rem; 
-    margin-bottom: 3rem;
+    margin: 3rem 0; 
 }
 
 .fig-caption {
@@ -156,10 +161,7 @@ img {
 h3 {
     font-weight: bold;
     font-size: 1.25rem; 
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin: .5rem 1rem;
 }
 
 h4 {
@@ -168,33 +170,50 @@ h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 h5 {
     text-align: center;
+    font-size: 1.25rem;
+    justify-content: space-around;
 }
 
-/* .icons {
-    justify-content: space-around;
-    justify-content: space-between;
-} */
-
-#pod-info {
-    justify-content: space-around;
-    text-justify: auto;
-    border-style: solid;
-    border-color: black;
-    border-width: .25rem;
-    border-radius: 1rem;
-    padding-top: .5rem;
-}
 #footer-info {
     font-size: 1.25rem;
     text-align:center;
-    justify-content: space-around;  
+    justify-content: space-around;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 1rem;  
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-@media screen and (min-width:480px) {
-    img {
-        display:flex;
-        width:100%;
-    } 
+@media (min-width:600px) {
+    main {
+        max-width:90%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size:3rem;
+    }
+    h2 {
+        font-size:2rem;
+    }
+    h3 h4 h5 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    p {
+        font-size:1.5rem;
+    }
+    .fig-caption {
+        font-size:1.25rem;
+    }
+}
+
+@media (min-width:900px) {
+    main {
+        max-width: 80%;
+    }
 }
