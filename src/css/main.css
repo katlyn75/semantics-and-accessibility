@@ -32,8 +32,7 @@ body {
     padding: .5rem 1rem;
     border-radius: .5rem;
     display: inline-block;
-    margin-bottom: 1rem;
-    margin-top: 1rem;    
+    margin: 1rem;    
 }
 
 /* https://css-tricks.com/css-content/ */
